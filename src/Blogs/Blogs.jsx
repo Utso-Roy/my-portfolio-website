@@ -1,29 +1,34 @@
-import React from 'react';
+import React from "react";
 
 const Blogs = () => {
-    return (
-        <div className=''>
-            <h3> ami blogs</h3>
-
-            <div className="hero bg-base-200 min-h-screen">
-  <div className="hero-content flex-col lg:flex-row">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-      className="max-w-sm rounded-lg shadow-2xl"
-    />
-    <div>
-      <h1 className="text-5xl font-bold">Box Office News!</h1>
-      <p className="py-6">
-        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-        quasi. In deleniti eaque aut repudiandae et a id nisi.
-      </p>
-      <button className="btn btn-primary">Get Started</button>
-    </div>
-  </div>
-</div>
-            
+  return (
+    <div className="py-26  ">
+      <div className=" border-t-1 border-b-1 border-dashed p-2 pb-4 pt-4">
+        <div>
+          <p className="text-[16px]">
+            I started with simple HTML and CSS, then discovered the power of
+            JavaScript. Learning React transformed how I build web apps,
+            enabling me to create clean, scalable, and responsive projects. Now,
+            I’m diving into full-stack development, sharpening my skills every
+            day with backend technologies and problem-solving. <br /> <br />
+            <span className="font-semibold">
+              I’m excited to continue growing as a developer, embracing new
+              challenges, and building meaningful applications that make a
+              difference. This journey has only just begun!
+            </span>
+          </p>
         </div>
-    );
+
+        <div>
+          <img
+            className="object-contain"
+            src="https://i.ibb.co/Xk7qLK60/My-Journey-in-Web-Development-visual-selection-2.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Blogs;

@@ -6,11 +6,11 @@ const Footer = () => {
 
     const navLinks = (
         <>
-                  <li> <NavLink className={({isActive}) => isActive ? " border-b-2 border-amber-400" : " border-gray-300"} to= "/"> Home</NavLink> </li>
-                  <li> <NavLink className={({isActive}) => isActive ? " border-b-2 border-amber-400" : " border-gray-300"} to= "/projects"> Projects</NavLink> </li>
-                  <li> <NavLink className={({isActive}) => isActive ? " border-b-2 border-amber-400" : " border-gray-300"} to= "/learning"> Learning </NavLink> </li>
-                  <li> <NavLink className={({isActive}) => isActive ? " border-b-2 border-amber-400" : " border-gray-300"} to= "/blogs"> Blogs</NavLink> </li>
-                  <li> <NavLink className={({isActive}) => isActive ? " border-b-2 border-amber-400" : " border-gray-300"} to= "/contacts"> Contacts </NavLink> </li>
+                  <li> <NavLink className={({isActive}) => isActive ? " border-b-2 border-[blue]" : " border-gray-300"} to= "/"> Home</NavLink> </li>
+                  <li> <NavLink className={({isActive}) => isActive ? " border-b-2 border-[blue]" : " border-gray-300"} to= "/projects"> Projects</NavLink> </li>
+                  <li> <NavLink className={({isActive}) => isActive ? " border-b-2 border-[blue]" : " border-gray-300"} to= "/learning"> Learning </NavLink> </li>
+                  <li> <NavLink className={({isActive}) => isActive ? " border-b-2 border-[blue]" : " border-gray-300"} to= "/blogs"> Journey</NavLink> </li>
+                  <li> <NavLink className={({isActive}) => isActive ? " border-b-2 border-[blue]" : " border-gray-300"} to= "/contacts"> Contacts </NavLink> </li>
               
         
       </>
