@@ -1,18 +1,36 @@
 [
   {
-    "title": "Portfolio Website",
-    "description": "A personal portfolio showcasing my web development journey, skills, and projects.",
-    "image": "https://i.ibb.co/pw9tzcs/project1.png",
-    "tech": ["React", "Tailwind", "Framer Motion"],
-    "liveLink": "https://your-portfolio-site.com",
-    "githubLink": "https://github.com/your-username/portfolio"
+    "title": "GardenLit",
+    "description": "A vibrant community platform for gardening enthusiasts to share tips, ask plant care questions, find local gardeners, and join or host gardening events — covering everything from composting to hydroponics and balcony gardening.",
+    "image": "https://i.ibb.co/Q7FLhHRp/garden-Lit.jpg",
+    "tech": [
+      "React.js",
+      "Tailwind CSS",
+      "Firebase Authentication",
+      "MongoDB",
+      "Express.js",
+      "Node.js",
+      "Axios",
+      "JWT"
+    ],
+    "liveLink": "https://sparkly-paprenjak-17978f.netlify.app/",
+    "githubLink": "https://github.com/Utso-Roy/Gardening_enthusiast"
   },
   {
-    "title": "Donation Management App",
-    "description": "A full-stack MERN app for managing donations with admin dashboard and analytics.",
-    "image": "https://i.ibb.co/yFbC1Mj/project2.png",
-    "tech": ["MongoDB", "Express", "React", "Node.js"],
-    "liveLink": "https://donate-app.vercel.app",
-    "githubLink": "https://github.com/your-username/donation-app"
+    "title": "Launchly",
+    "description": "A modern platform for discovering and sharing tech products like web apps, AI tools, software, games, and mobile apps — inspired by Product Hunt. Users can submit products, upvote/downvote, and post reviews. The platform features user authentication, role-based access (user, moderator, admin), product moderation, and a payment system for unlocking premium features.",
+    "image": "https://i.ibb.co/SDWtSTHr/launcly.jpg",
+    "tech": [
+      "MongoDB",
+      "Express",
+      "Axios",
+      "Firebase Authentication",
+      "React",
+      "JWT",
+      "Stripe",
+      "Node.js"
+    ],
+    "liveLink": "https://dancing-chaja-a6026f.netlify.app/",
+    "githubLink": "https://github.com/Utso-Roy/Launchly_Ai"
   }
 ]
