@@ -12,6 +12,7 @@ const skills = [
   "Firebase",
   "Tailwind CSS",
   "JWT Auth",
+  "Typescript"
 ];
 
 const Home = () => {

@@ -1,22 +1,6 @@
 [
-  {
-    "title": "GardenLit",
-    "description": "A vibrant community platform for gardening enthusiasts to share tips, ask plant care questions, find local gardeners, and join or host gardening events — covering everything from composting to hydroponics and balcony gardening.",
-    "image": "https://i.ibb.co/Q7FLhHRp/garden-Lit.jpg",
-    "tech": [
-      "React.js",
-      "Tailwind CSS",
-      "Firebase Authentication",
-      "MongoDB",
-      "Express.js",
-      "Node.js",
-      "Axios",
-      "JWT"
-    ],
-    "liveLink": "https://sparkly-paprenjak-17978f.netlify.app/",
-    "githubLink": "https://github.com/Utso-Roy/Gardening_enthusiast"
-  },
-  {
+
+{
     "title": "Launchly",
     "description": "A modern platform for discovering and sharing tech products like web apps, AI tools, software, games, and mobile apps — inspired by Product Hunt. Users can submit products, upvote/downvote, and post reviews. The platform features user authentication, role-based access (user, moderator, admin), product moderation, and a payment system for unlocking premium features.",
     "image": "https://i.ibb.co/SDWtSTHr/launcly.jpg",
@@ -33,4 +17,23 @@
     "liveLink": "https://dancing-chaja-a6026f.netlify.app/",
     "githubLink": "https://github.com/Utso-Roy/Launchly_Ai"
   }
+    ,
+  {
+    "title": "GardenLit",
+    "description": "A vibrant community platform for gardening enthusiasts to share tips, ask plant care questions, find local gardeners, and join or host gardening events — covering everything from composting to hydroponics and balcony gardening.",
+    "image": "https://i.ibb.co/Q7FLhHRp/garden-Lit.jpg",
+    "tech": [
+      "React.js",
+      "Tailwind CSS",
+      "Firebase Authentication",
+      "MongoDB",
+      "Express.js",
+      "Node.js",
+      "Axios",
+      "JWT"
+    ],
+    "liveLink": "https://sparkly-paprenjak-17978f.netlify.app/",
+    "githubLink": "https://github.com/Utso-Roy/Gardening_enthusiast"
+  }
+  
 ]
