@@ -20,7 +20,7 @@ const Navbar = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            isActive ? "border-b-2 border-blue-500" : "border-gray-300"
+            isActive ? " text-[#257DC8]" : "border-gray-300"
           }
           to="/"
         >
@@ -30,7 +30,7 @@ const Navbar = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            isActive ? "border-b-2 border-blue-500" : "border-gray-300"
+            isActive ? "text-[#257DC8]" : "border-gray-300"
           }
           to="/projects"
         >
@@ -40,7 +40,7 @@ const Navbar = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            isActive ? "border-b-2 border-blue-500" : "border-gray-300"
+            isActive ? "text-[#257DC8]" : "border-gray-300"
           }
           to="/learning"
         >
@@ -50,9 +50,9 @@ const Navbar = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            isActive ? "border-b-2 border-blue-500" : "border-gray-300"
+            isActive ? "text-[#257DC8]" : "border-gray-300"
           }
-          to="/blogs"
+          to="/journey"
         >
           Journey
         </NavLink>
@@ -60,7 +60,7 @@ const Navbar = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            isActive ? "border-b-2 border-blue-500" : "border-gray-300"
+            isActive ? "text-[#257DC8]" : "border-gray-300"
           }
           to="/contacts"
         >
@@ -72,7 +72,7 @@ const Navbar = () => {
 
   return (
     <div className="my-4">
-      <div className="navbar fixed backdrop-blur-lg max-w-5xl mx-auto z-50 bg-base-100/80 rounded-xl shadow-lg">
+      <div className="navbar fixed backdrop-blur-lg max-w-5xl dark:bg-gray-800 mx-auto z-50 bg-base-200/80 rounded-xl shadow-lg">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

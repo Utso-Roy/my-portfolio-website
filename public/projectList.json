@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Portfolio Website",
+    "description": "A personal portfolio showcasing my web development journey, skills, and projects.",
+    "image": "https://i.ibb.co/pw9tzcs/project1.png",
+    "tech": ["React", "Tailwind", "Framer Motion"],
+    "liveLink": "https://your-portfolio-site.com",
+    "githubLink": "https://github.com/your-username/portfolio"
+  },
+  {
+    "title": "Donation Management App",
+    "description": "A full-stack MERN app for managing donations with admin dashboard and analytics.",
+    "image": "https://i.ibb.co/yFbC1Mj/project2.png",
+    "tech": ["MongoDB", "Express", "React", "Node.js"],
+    "liveLink": "https://donate-app.vercel.app",
+    "githubLink": "https://github.com/your-username/donation-app"
+  }
+]

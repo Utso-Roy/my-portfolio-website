@@ -1,7 +1,8 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import img from '../assets/images (3).png';
+import img from "../assets/images (3).png";
 import Swal from "sweetalert2";
+
 const Contacts = () => {
   const form = useRef();
 
@@ -14,86 +15,83 @@ const Contacts = () => {
       })
       .then(
         () => {
-			  Swal.fire({
-  title: "Message sent successfully!",
-  icon: "success",
-  draggable: true
-});
+          Swal.fire({
+            title: "Message sent successfully!",
+            icon: "success",
+            draggable: true,
+          });
         },
         (error) => {
-			
-
-
-
-			Swal.fire({
-  icon: {error},
-  title: "Oops...",
-  text: "Failed to send message.",
-});
+          console.log(error)
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Failed to send message.",
+          });
         }
       );
-      
-    e.target.reset(); 
+
+    e.target.reset();
   };
 
   return (
-    <div className="py-20 space-y-3">
-      <div>
-        <h2 className="font-semibold text-[20px]">Contact with me</h2>
-        <p className="text-[14px]">
-          Here I am waiting for your mail. Feel free to start conversation with me.
+    <div className="py-20 bg-base-200 dark:bg-gray-800 my-2 space-y-6">
+      <div className="text-center">
+        <h2 className="text-xl md:text-2xl font-semibold text-[#257DC8]">
+          Contact With Me
+        </h2>
+        <p className="text-sm md:text-base text-gray-600 dark:text-gray-300">
+          I'm waiting for your mail. Feel free to start a conversation.
         </p>
       </div>
 
-      <div className="border-1 border-dashed p-4">
-        <div className="grid max-w-screen-4xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 dark:bg-gray-100 dark:text-gray-800">
+      <div className="border border-dashed border-gray-300 dark:border-gray-600 p-4 rounded-lg">
+        <div className="grid max-w-6xl grid-cols-1 gap-8 px-4 py-12 mx-auto rounded-lg md:grid-cols-2 md:px-10 lg:px-20 dark:bg-gray-900 bg-white text-gray-900 dark:text-white shadow-lg">
           <div>
-            <div className="space-y-2">
-              <h2 className="text-4xl font-bold lg:text-5xl">
-                Let's <span className="text-[#016742]">talk!</span>
-              </h2>
-            </div>
+            <h2 className="text-4xl font-bold mb-6">
+              Let’s <span className="text-[#257DC8]">Talk!</span>
+            </h2>
             <img
               src={img}
               alt="Contact illustration"
-              className="p-2 my-8 w-full object-contain h-48"
+              className="w-full h-56 object-contain rounded"
             />
           </div>
 
           <form ref={form} onSubmit={sendEmail} className="space-y-6">
             <div>
-              <label htmlFor="name" className="text-sm">Full name</label>
+              <label htmlFor="name" className="text-sm">Full Name</label>
               <input
                 id="name"
-                name="from_name" 
+                name="from_name"
                 type="text"
                 required
-                className="w-full input p-3 rounded dark:bg-gray-100"
+                className="w-full p-3 rounded input input-bordered bg-base-100"
               />
             </div>
             <div>
               <label htmlFor="email" className="text-sm">Email</label>
               <input
                 id="email"
-                name="from_email" 
+                name="from_email"
                 type="email"
                 required
-                className="w-full p-3 input rounded dark:bg-gray-100"
+                className="w-full p-3 rounded input input-bordered bg-base-100"
               />
             </div>
             <div>
               <label htmlFor="message" className="text-sm">Message</label>
               <textarea
                 id="message"
-                name="message" 
-                rows="3"
+                name="message"
+                rows="4"
                 required
-                className="w-full textarea p-3 rounded dark:bg-gray-100"
+                className="w-full p-3 rounded textarea textarea-bordered bg-base-100"
               ></textarea>
             </div>
             <button
               type="submit"
-              className="w-[40%] btn btn-primary text-sm font-bold"
+              className="btn bg-[#257DC8] text-white font-bold w-[50%]"
             >
               Send Message
             </button>

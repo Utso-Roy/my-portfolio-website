@@ -3,9 +3,9 @@ import { FaNodeJs } from "react-icons/fa";
 
 const Learning = () => {
   return (
-    <div className="py-20">
+    <div className="py-20 bg-base-300 dark:bg-gray-800 my-5 p-5">
       <div className="  py-3">
-        <h2 className="text-[22px] font-semibold">
+        <h2 className="text-[22px] text-[#257DC8] font-semibold">
           {" "}
           <span className="font-bold text-2xl">Notes </span>- I am learning day
           by day
