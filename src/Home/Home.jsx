@@ -17,9 +17,10 @@ const skills = [
 
 const Home = () => {
   return (
-    <div className="py-8 ">
+    <div className="py-8">
       <div className="hero bg-base-300 dark:bg-gray-800 min-h-screen">
-        <div className="hero-content flex-col lg:flex-row-reverse">
+        <div className="hero-content flex-col space-y-20 lg:space-y-0 lg:flex-row-reverse lg:gap-12">
+          
           {/* Image card */}
           <TiltedCard
             imageSrc="https://i.ibb.co.com/6061VMNC/Utso-Roy.jpg"
@@ -36,8 +37,9 @@ const Home = () => {
           />
 
           {/* Intro text */}
-          <div>
+          <div className="text-center lg:text-left max-w-xl">
             <h3 className="text-[16px]">Hi, My name is</h3>
+
             <h1 className="font-semibold">
               <BlurText
                 text="Utso Chandro Roy"
@@ -47,25 +49,28 @@ const Home = () => {
                 className="text-[3rem] dark:text-white text-gray-700"
               />
             </h1>
+
             <h2 className="text-[2rem] text-gray-700 dark:text-white font-semibold">
               I build things for the web.
             </h2>
-            <p className="text-[16px] my-2">
+
+            <p className="text-[16px] my-4 text-gray-600 dark:text-gray-300">
               I am a passionate MERN Stack Developer skilled in building
-              full-stack, <br />
+              full-stack, <br className="hidden sm:block" />
               responsive, and user-friendly web applications using MongoDB,
-              Express.js, <br />
+              Express.js, <br className="hidden sm:block" />
               React.js, Next.js, and Node.js. I focus on clean design,
-              efficient coding practices, <br />
+              efficient coding practices, <br className="hidden sm:block" />
               and delivering seamless user experiences with modern technologies.
             </p>
 
             {/*  Featured Skills Section */}
             <div className="mt-6">
               <h3 className="text-xl font-bold mb-4 dark:text-white text-gray-700">
-                 Featured Skills
+                Featured Skills
               </h3>
-              <div className="flex flex-wrap gap-3">
+
+              <div className="flex flex-wrap justify-center lg:justify-start gap-3">
                 {skills.map((skill, index) => (
                   <motion.span
                     key={skill}
