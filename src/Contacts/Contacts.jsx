@@ -91,7 +91,7 @@ const Contacts = () => {
             </div>
             <button
               type="submit"
-              className="btn bg-[#257DC8] text-white font-bold w-[50%]"
+              className="btn btn-outline text-[#0267af] hover:bg-[#0267af] hover:text-white  w-[50%]"
             >
               Send Message
             </button>
