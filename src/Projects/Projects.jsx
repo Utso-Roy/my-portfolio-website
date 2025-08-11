@@ -6,7 +6,7 @@ import projectList from "../../public/projectList.json"
 
 const Projects = () => {
   return (
-    <div className="px-6 py-20 my-4 dark:bg-gray-900 bg-base-300">
+    <div className="px-6 py-20 my-4 dark:bg-gray-900 bg-base-200">
       <h2 className="text-3xl font-bold text-[#257DC8] text-center mb-16">
         My Projects
       </h2>

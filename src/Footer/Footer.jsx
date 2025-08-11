@@ -40,7 +40,7 @@ const Footer = () => {
           className={({ isActive }) =>
             isActive ? "text-[#257DC8] font-semibold" : "text-gray-500 hover:text-blue-400"
           }
-          to="/blogs"
+          to="/journey"
         >
           Journey
         </NavLink>
@@ -74,7 +74,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             aria-label="Facebook"
           >
-            <FaFacebookSquare size={28} className="text-blue-600 hover:text-blue-800" />
+            <FaFacebookSquare size={28} className="text-[#257DC8] hover:text-blue-800" />
           </a>
           <a
             href="https://github.com/Utso-Roy"
@@ -90,7 +90,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             aria-label="LinkedIn"
           >
-            <FaLinkedin size={28} className="text-blue-700 hover:text-blue-900" />
+            <FaLinkedin size={28} className="text-[#257DC8] hover:text-blue-900" />
           </a>
         </div>
 

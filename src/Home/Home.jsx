@@ -2,23 +2,22 @@ import React from "react";
 import TiltedCard from "../../Reactbits/TiltedCard/TiltedCard";
 import BlurText from "../../Reactbits/BlurText/BlurText";
 import { motion } from "framer-motion";
+import AboutMe from "./AboutMe";
+import Skill from "./Skill";
 
-const skills = [
-  "MongoDB",
-  "Express.js",
-  "React.js",
-  "Next.js",
-  "Node.js",
-  "Firebase",
-  "Tailwind CSS",
-  "JWT Auth",
-  "Typescript"
-];
+
 
 const Home = () => {
+  const handleResumeDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/resume.pdf";  
+    link.download = "Utso_Roy_Resume.pdf";
+    link.click();
+  };
+
   return (
-    <div className="py-8">
-      <div className="hero bg-base-300 dark:bg-gray-800 min-h-screen">
+    <div className="py-12 space-y-5">
+      <div className="hero bg-base-200 dark:bg-gray-800 min-h-screen">
         <div className="hero-content flex-col space-y-20 lg:space-y-0 lg:flex-row-reverse lg:gap-12">
           
           {/* Image card */}
@@ -54,44 +53,35 @@ const Home = () => {
               I build things for the web.
             </h2>
 
+           
             <p className="text-[16px] my-4 text-gray-600 dark:text-gray-300">
               I am a passionate MERN Stack Developer skilled in building
-              full-stack, <br className="hidden sm:block" />
-              responsive, and user-friendly web applications using MongoDB,
-              Express.js, <br className="hidden sm:block" />
-              React.js, Next.js, and Node.js. I focus on clean design,
-              efficient coding practices, <br className="hidden sm:block" />
-              and delivering seamless user experiences with modern technologies.
+              full-stack, responsive, and user-friendly web applications.
             </p>
 
-            {/*  Featured Skills Section */}
-            <div className="mt-6">
-              <h3 className="text-xl font-bold mb-4 dark:text-white text-gray-700">
-                Featured Skills
-              </h3>
+            {/* Resume Download Button */}
+            <button
+              onClick={handleResumeDownload}
+              className="btn btn-outline text-[#0267af] hover:bg-[#0267af] hover:text-white mt-4"
+            >
+              Download Resume
+            </button>
 
-              <div className="flex flex-wrap justify-center lg:justify-start gap-3">
-                {skills.map((skill, index) => (
-                  <motion.span
-                    key={skill}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{
-                      delay: index * 0.1,
-                      duration: 0.5,
-                      type: "spring",
-                    }}
-                    className="px-4 py-2 bg-[#257DC8] text-white rounded-full text-sm shadow-md hover:scale-105 transition-transform duration-300"
-                  >
-                    {skill}
-                  </motion.span>
-                ))}
-              </div>
-            </div>
-            {/* End Skills */}
+          
           </div>
         </div>
       </div>
+      <section>
+          <AboutMe></AboutMe>
+      </section>
+
+      <section>
+        <Skill></Skill>
+
+        
+      </section>
+
+    
     </div>
   );
 };

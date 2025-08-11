@@ -35,7 +35,7 @@ const journeyData = [
 
 const Journey = () => {
   return (
-   <div className="py-20 bg-base-300 dark:bg-gray-800 px-4 md:px-10 my-4">
+   <div className="py-20 bg-base-200 dark:bg-gray-800 px-4 md:px-10 my-4">
   <div className="text-center mb-10">
     <h2 className="text-3xl font-bold text-[#257DC8] dark:text-white">My Development Journey</h2>
     <p className="text-gray-600 dark:text-gray-300 mt-2 text-[16px] max-w-xl mx-auto">
